@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor div {
+    width: 80%;
+}
+
+.contenedor-botones {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
