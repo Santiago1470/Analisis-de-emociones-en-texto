@@ -1,5 +1,5 @@
 {
-  "positivos": [
+  "comentarios": [
     {
       "usuario": "Usuario123",
       "comentario": "¡Excelente servicio al cliente! Siempre están dispuestos a ayudar."
@@ -31,9 +31,7 @@
     {
       "usuario": "TechEnthusiast012",
       "comentario": "Como desarrollador, realmente aprecio el esfuerzo que se ha puesto en esta nueva actualización. No solo se solucionaron los errores, sino que también se agregaron nuevas características útiles. ¡Bien hecho al equipo de desarrollo!"
-    }
-  ],
-  "negativos": [
+    },
     {
       "usuario": "CompradorInsatisfecho",
       "comentario": "La calidad del producto dejó mucho que desear. No volvería a comprarlo."
@@ -65,9 +63,7 @@
     {
       "usuario": "FrustratedUser890",
       "comentario": "Esta aplicación es un desastre. Se bloquea constantemente, es lenta y la interfaz es confusa. ¡Es hora de buscar una alternativa más confiable!"
-    }
-  ],
-  "neutros": [
+    },
     {
       "usuario": "FoodieCasual",
       "comentario": "La comida en el restaurante era decente, pero nada espectacular."
