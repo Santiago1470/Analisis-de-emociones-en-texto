@@ -16,7 +16,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Aplicación": "Correindo"}
 
 @app.post("/analizarTexto")
 def emotionsText_detect(texto_input: TextoInput):
@@ -25,4 +25,4 @@ def emotionsText_detect(texto_input: TextoInput):
     print(resultado)
     stars = resultado[1]
     stars = clasificacion[stars]
-    return {"Servicio": stars}
+    return {"Servicio": "El comentario analizado es " + stars}
