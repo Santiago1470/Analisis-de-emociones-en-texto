@@ -20,7 +20,10 @@
   </div>
   <div class="contenedor">
     <div class="ms-3">
-      <label class="form-label">Texto para analizar:</label>
+      <div class="contenedor-textoAnalisis">
+        <label class="form-label">Texto para analizar:</label>
+        <input class="btn btn-primary" type="button" value="Comentario aleatorio" id="buscarComentario">
+      </div>
       <textarea class="form-control" id="textaAnalizar" rows="3"></textarea>
     </div>
     <div class="contenedor-botones">
@@ -28,7 +31,7 @@
     </div>
     <div class="ms-3">
       <label class="form-label">Resultado:</label>
-      <input type="text" class="form-control" id="inputRespuesta" placeholder="Texto regular, entre positivo y negativo" disabled>
+      <input type="text" class="form-control" id="inputRespuesta" placeholder="Texto neutro, entre positivo y negativo" disabled>
     </div>
   </div>
   <script src="js/index.js"></script>

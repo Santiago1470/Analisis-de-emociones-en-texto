@@ -7,7 +7,19 @@ body {
     align-items: center;
 }
 
-.contenedor div {
+.contenedor-textoAnalisis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.contenedor-textoAnalisis label {
+    margin: 10px 0px 0px 0px;
+}
+
+.contenedor div:not(.contenedor-textoAnalisis) {
     width: 80%;
 }
 
