@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .contenedor-textoAnalisis{
@@ -19,11 +20,51 @@ body {
     margin: 10px 0px 0px 0px;
 }
 
-.contenedor div:not(.contenedor-textoAnalisis) {
+.contenedor .contenedor-analisis,
+.contenedor .contenedor-botones, 
+.contenedor .contenedor-resultado, 
+.contenedor .contenedor-comentarios {
     width: 80%;
 }
 
 .contenedor-botones {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+#textaAnalizar {
+    overflow: hidden;
+}
+
+.contenedor-comentarios {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 16px;
+}
+
+.contenedor-comentarios div {
+    width: 100%;
+}
+
+.comentarios-botones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.comentarios-texto {
+    text-align: left;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.contenedor-borrar input {
+    margin: 0px auto;
 }
