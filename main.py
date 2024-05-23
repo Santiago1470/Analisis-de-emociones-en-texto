@@ -45,13 +45,6 @@ def buscarComentario_aleatorio():
     comentario = random.choice(comentarios)
     return {"Comentario": comentario}
 
-# @app.get("/comentarios")
-# def buscarComentarios():
-#     with open('comentarios.json', 'r', encoding='utf-8') as file:
-#         datos = json.load(file)
-#     comentarios = datos['comentarios']
-#     return {"Comentario": comentarios}
-
 @app.get("/comentarios")
 def buscar_comentarios(tipoComentario: str = Query(..., description="Tipo de comentario: positivo, neutral o negativo")):
     with open('comentarios.json', 'r', encoding='utf-8') as file:
