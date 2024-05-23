@@ -1,7 +1,0 @@
-fastapi
-nltk
-tensorflow
-torch
-transformers
-tf-keras
-uvicorn
