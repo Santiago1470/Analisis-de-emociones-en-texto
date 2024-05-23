@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de emociones en textos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/index.css') }}">
+</head>
+
+<body>
+    <div class="contenedorTitulo">
+        <h1>Análisis de emociones en textos</h1>
+    </div>
+    <div class="contenedor">
+        <div class="ms-3 contenedor-analisis">
+            <div class="contenedor-textoAnalisis">
+                <label class="form-label">Texto para analizar:</label>
+                <input class="btn btn-primary" type="button" value="Comentario aleatorio" id="buscarComentario">
+            </div>
+            <textarea class="form-control" id="textaAnalizar" rows="3"></textarea>
+        </div>
+        <div class="contenedor-botones">
+            <input class="btn btn-primary" type="button" value="Enviar" id="buscar">
+        </div>
+        <div class="ms-3 contenedor-resultado">
+            <label class="form-label">Resultado:</label>
+            <input type="text" class="form-control" id="inputRespuesta"
+                placeholder="Texto neutro, entre positivo y negativo" disabled>
+        </div>
+        <div class="contenedor-comentarios">
+            <div class="comentarios-botones">
+                <input id="btnPositivo" class="btn btn-success" type="button" value="Comentarios positivos">
+                <input id="btnNeutro" class="btn btn-primary" type="button" value="Comentarios neutrales">
+                <input id="btnNegativo" class="btn btn-danger" type="button" value="Comentarios negativos">
+            </div>
+            <div class="comentarios-texto">
+                <h7>Clasificación:</h7>
+                <p id="cantidadComentarios"></p>
+            </div>
+            <div class="comentarios-resultado">
+                
+            </div>
+            <div class="contenedor-borrar">
+                <input id="btnBorrar" class="btn btn-danger" type="button" value="Borrar comentarios" style="display: none;">
+            </div>
+            
+        </div>
+    </div>
+    <script src="{{ url_for('static', path='/js/index.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contenedor-textoAnalisis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.contenedor-textoAnalisis label {
+    margin: 10px 0px 0px 0px;
+}
+
+.contenedor .contenedor-analisis,
+.contenedor .contenedor-botones, 
+.contenedor .contenedor-resultado, 
+.contenedor .contenedor-comentarios {
+    width: 80%;
+}
+
+.contenedor-botones {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#textaAnalizar {
+    overflow: hidden;
+}
+
+.contenedor-comentarios {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 16px;
+}
+
+.contenedor-comentarios .comentarios-botones,
+.contenedor-comentarios .comentarios-texto,
+.contenedor-comentarios .comentarios-resultado,
+.contenedor-comentarios .contenedor-borrar {
+    width: 100%;
+}
+
+.comentarios-botones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.comentarios-texto {
+    text-align: left;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.contenedor-borrar input {
+    margin: 0px auto;
+}
